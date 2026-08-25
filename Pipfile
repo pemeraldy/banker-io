@@ -22,6 +22,7 @@ python-dotenv = "==1.0.1"
 django-celery-beat = "*"
 django-celery-email = "*"
 celery = ">=5.3,<6.0"        # Pin celery range to help resolution
+loguru = "==0.7.2"
 
 [dev-packages]
 watchfiles = "==0.22.0"
