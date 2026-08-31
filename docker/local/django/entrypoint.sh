@@ -17,7 +17,7 @@ start = time.time()
 while True:
     try:
         psycopg2.connect(
-            dbname="${POSTGRES_BD}",
+            dbname="${POSTGRES_DB}",
             user="${POSTGRES_USER}",
             password="${POSTGRES_PASSWORD}",
             host="${POSTGRES_HOST}",
@@ -31,8 +31,7 @@ while True:
                 "This is taking longer than expected. The following exception may be "
                 "indicative of an unrecoverable error: '{}'\n".format(error)
             )
-            time.sleep(3)
-
+        time.sleep(3)
 END
 
 echo >&2 'PostgresSQL is available'
